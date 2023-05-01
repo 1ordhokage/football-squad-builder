@@ -4,7 +4,7 @@ from src.database.database import Base
 
 
 class Player(Base):
-    __tablename__ = "players"
+    __tablename__ = 'players'
 
     id = Column(Integer, primary_key=True)
     name = Column(String)
