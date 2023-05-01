@@ -3,11 +3,11 @@ from pydantic import BaseModel
 
 class PlayerRead(BaseModel):
     name: str
+    nationality: str
+    club: str
     age: int
     photo_url: str
-    nationality: str
     flag_url: str
-    club: str
     club_logo_url: str
     value: str
     foot: str
@@ -17,3 +17,13 @@ class PlayerRead(BaseModel):
 
     class Config:
         orm_mode = True
+
+
+class PlayerPreview(BaseModel):
+    name: str
+    nationality: str
+    club: str
+
+    class Config:
+        orm_mode = True
+
