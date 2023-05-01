@@ -2,6 +2,8 @@ from fastapi import FastAPI
 
 from src.auth.router.auth import router as auth_router
 from src.auth.router.users import router as users_router
+from src.players.router import router as players_router
+
 
 app = FastAPI(
     title='FootSquad',
@@ -11,3 +13,4 @@ app = FastAPI(
 
 app.include_router(auth_router)
 app.include_router(users_router)
+app.include_router(players_router)
