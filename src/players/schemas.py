@@ -26,4 +26,3 @@ class PlayerPreview(BaseModel):
 
     class Config:
         orm_mode = True
-
